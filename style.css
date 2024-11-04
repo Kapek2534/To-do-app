@@ -30,3 +30,24 @@ body {
   cursor: pointer;
   letter-spacing: 1px;
 }
+
+.notes {
+  padding: 20px;
+  text-align: left;
+}
+
+.note {
+  padding: 8px;
+}
+
+.btn-delete {
+  border-style: none;
+  border-radius: 4px;
+  background-color: rgb(99, 15, 15);
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
