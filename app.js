@@ -1,8 +1,16 @@
 function saveNote() {
-  let textNote = document.querySelector(".area").value;
+  const area = document.querySelector(".area");
+  let textNote = area.value;
+
+  if (textNote === "") {
+    alert("Cannot add empty note");
+    return;
+  }
+
   const keyNote = Date.now().toString();
   localStorage.setItem(keyNote, textNote);
   createNote(keyNote, textNote);
+  area.value = "";
 }
 
 function deleteNote(keyNote) {
